@@ -9,7 +9,7 @@ with open(filename) as f:
       while True:
         c = f.read(1) #takes 20 bytes :D
         if not c:
-          print "Update Over"
+          print("Update Over")
           break
         cInt = int(c.encode('hex'), 16)
         crc = ((crc >> 8) | (crc << 8)) & 0xFFFF

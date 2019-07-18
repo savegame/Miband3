@@ -379,7 +379,7 @@ class MiBand3(Peripheral):
           while True:
             c = f.read(20) #takes 20 bytes :D
             if not c:
-              print "Update Over"
+              print("Update Over")
               break
             print('Writing Resource', c.encode('hex'))
             char1.write(c)
